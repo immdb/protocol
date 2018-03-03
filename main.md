@@ -28,6 +28,16 @@ will not change
 - id's are a md5 hash of the previous event
 - a write will be successful if the id matches the hash of the last event on the chain
 - a write will fail if any node cannot verify previous statement
+- data will be in json format
+
+```
+{
+  "event": String,
+  "chain": String,
+  "id": String,
+  "data": Any
+}
+```
 
 ## reading data
 
